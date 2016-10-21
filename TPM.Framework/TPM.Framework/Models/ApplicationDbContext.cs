@@ -12,5 +12,7 @@ namespace TPM.Framework.Models
         {
             Database.SetInitializer(new MySqlInitializer());
         }
+
+        public System.Data.Entity.DbSet<TPM.Framework.Models.Employee> Employees { get; set; }
     }
 }
